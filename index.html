@@ -5,18 +5,21 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-    <!-- <a-box position='0 0.5 0' material='opacity: 1;'></a-box> -->
-    <!-- <a-image src="abc.jpg"></a-image> -->
-    <!-- define a camera which will move according to the marker position -->
+    <a-box position='0 0.5 0' material='opacity: 1;'></a-box>
 
     <a-marker-camera preset='hiro'></a-marker-camera>
+    <!-- <a-marker-camera type='pattern' src='./assets/pattern-house.patt'></a-marker-camera> -->
+
+    <!-- <a-marker-camera type='pattern' url='path/to/pattern-marker.patt'></a-marker-camera> -->
+    <!-- <a-marker-camera type='pattern' url='https://drive.google.com/file/d/1Wh1r8tafNOvIafLonfWtfFdPaPbxErY4/view?usp=sharing'></a-marker-camera> -->
+    <!-- <a-marker-camera type='pattern' url='./assets/pattern-house.patt'></a-marker-camera> -->
     
-    <a-assets>
+    <!-- <a-assets>
         <a-asset-item id="column" src="./assets/colonne.gltf"></a-asset-item>
-    </a-assets>
+    </a-assets> -->
 
     <!-- use your gltf model -->
-    <a-entity gltf-model="##column"></a-entity>
+    <!-- <a-entity gltf-model="##column"></a-entity> -->
 
   </a-scene>
 </body>
